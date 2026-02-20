@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <script type="module">
+  import Chatbot from '/web.js'
+
+  // const translations = {
+  //   en: {
+  //     placeholder: "Type your question",
+  //     welcomeMessage: "Hello! How can I help you?",
+  //     tooltipMessage: "Hi There 👋!",
+  //   },
+  //   de: {
+  //     placeholder: "Stellen Sie Ihre Frage",
+  //     welcomeMessage: "Hallo! Wie kann ich Ihnen helfen?",
+  //     tooltipMessage: "Hallo 👋!",
+  //   },
+  //
+  // };
+  //
+  // function detectLang(text) {
+  //   if (/[äöüßÄÖÜ]|(\b(ich|bitte|danke|wie|was|warum)\b)/i.test(text)) return "de";
+  //   return "en";
+  // }
+  Chatbot.init({
+      chatflowid: 'b4ba85a6-8a9c-4122-a9e5-0028a7841293',
+      apiHost: 'http://localhost:3000'
+  })
+</script>
+</body>
+</html>
+
